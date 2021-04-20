@@ -3,7 +3,7 @@
 set -e
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers --noconfirm
+sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany --noconfirm
 
 cd bspwm
 cd scripts
@@ -43,7 +43,7 @@ cd bspwm
 cp -r * ~/.config/bspwm
 cd ..
 
-cd shxkd
+cd sxhkd
 cp -r * ~/.config/sxhkd
 cd ..
 
