@@ -1,59 +1,41 @@
 ###################
-
 Utility Keyboard Shortcuts
-
 ###################
 
--> Open terminal (termite)
-Super + Return
+Super + Return -> Open terminal (termite)
 
--> App launcher (Rofi)
-Super + d
+Super + d -> App launcher (Rofi)
 
--> Window switcher
-Super + Ctrl
+Super + Ctrl -> Window switcher
 
--> Show SSH sessions
-Super + Shift + d
+Super + Shift + d -> Show SSH sessions
 
--> Power Menu
-Super + Shift + e
+Super + Shift + e -> Power Menu
 
--> Reload Sxhkd (you need to do this after you modify sxhkdrc)
-Super + Escape
+Super + Escape -> Reload Sxhkd (you need to do this after you modify sxhkdrc)
 
--> Screen shot full monitor and save in Pictures folder
-Print
+Print -> Screen shot full monitor and save in Pictures folder
 
--> Show screenshot menu
-Super + Print
+Super + Print -> Show screenshot menu
 
--> Launch Firefox
-Super + F1
+Super + F1 -> Launch Firefox
 
-->Launch Brave
-F9
+F9 -> Launch Brave
 
--> Launch Thunar
-F12
+F12 -> Launch Thunar
 
-super + F2
-	pcmanfm
+super + F2 -> pcmanfm
 
-super + F3
-	lxtask
+super + F3 -> lxtask
 	
-F10
-	pamac-manager
+F10 -> pamac-manager
 	
 -> Middle button: Launch jgmenu
 
-
+ctrl + g -> Launch geany
 
 ###################
-
 Bspwm Keyboard Shortcuts
-
 ###################
 
 -> Restart Bspwm
