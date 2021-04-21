@@ -193,6 +193,9 @@ super + F3
 	
 F10
 	pamac-manager
+
+ctrl + g
+	geany
   
   
 ~button2
