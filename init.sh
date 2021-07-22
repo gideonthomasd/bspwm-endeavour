@@ -3,7 +3,7 @@
 set -e
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany --noconfirm
+sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak --noconfirm
 
 cd bspwm
 cd scripts
@@ -47,5 +47,5 @@ cd sxhkd
 cp -r * ~/.config/sxhkd
 cd ..
 
-
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 yay -S --noconfirm timeshift brave-bin pamac-all
