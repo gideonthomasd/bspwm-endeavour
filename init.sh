@@ -67,4 +67,4 @@ cp -r * ~/.config/sxhkd
 cd ..
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-yay -S --noconfirm timeshift brave-bin pamac-all
+yay -S --noconfirm timeshift brave-bin pamac-all nerd-fonts-mononoki
