@@ -21,6 +21,17 @@ chmod +x *.sh
 cd ..
 cd ..
 
+cd i3
+chmod +x testwallpaper
+cd ..
+
+cd i3blocks
+chmod +x dwmweather
+chmod +x dwm_resources.sh
+chmod +x time
+chmod +x dwmcpu
+chmod +x dwmmail
+cd ..
 
 
 cd polybar
