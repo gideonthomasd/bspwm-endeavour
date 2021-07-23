@@ -34,6 +34,7 @@ cd ..
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/i3blocks
 mkdir -p ~/.config/termite
+mkdir -p ~/.config/rofi
 
 cd i3
 chmod +x testwallpaper
@@ -62,6 +63,10 @@ cd ..
 
 cd termite
 cp -r * ~/.config/termite
+cd ..
+
+cd rofi
+cp -r * ~/.config/rofi
 cd ..
 
 cp bashrc ~/.bashrc
