@@ -3,7 +3,7 @@
 set -e
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak --noconfirm
+sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak i3-gaps i3blocks --noconfirm
 
 cd bspwm
 cd scripts
