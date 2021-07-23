@@ -2,7 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d I II III IV V VI 
+#VII VIII IX X
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -44,11 +45,13 @@ sh ~/.screenlayout/monitor.sh &
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Wallpaper
-nitrogen --restore &
+#nitrogen --restore &
+$HOME/.config/i3/testwallpaper &
 # Dex
 #dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 # Picom
-picom -CGb &
+#picom -CGb &
+xcompmgr &
 # Network Applet
 nm-applet --indicator &
 

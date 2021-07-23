@@ -44,7 +44,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal #altered
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec termite
 
 
 # kill focused window #altered
@@ -228,7 +228,7 @@ client.focused          #bf616a #cecece #000000 #FF0000 #99004C
 
 
 # My commands
-exec_always lxpolkit
+#exec_always lxpolkit
 exec_always sxhkd -c $HOME/.config/sxhkd/sxhkdrc
 exec_always xcompmgr
 #exec_always feh --bg-scale --randomize ~/Pictures/wallpapers/*
