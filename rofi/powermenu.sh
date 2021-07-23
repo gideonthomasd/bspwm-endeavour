@@ -29,7 +29,7 @@ then
     /home/$USER/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
 elif [ "$selected_option" == "$logout" ]
 then
-    bspc quit
+    pkill bspwm
     pkill i3
 elif [ "$selected_option" == "$shutdown" ]
 then
