@@ -2,8 +2,18 @@
 
 set -e
 
+#GET arcolinux-spices#
+git clone https://github.com/arcolinux/arcolinux-spices
+cd arcolinux-spices
+sudo usr/share/arcolinux-spices/scripts/get-the-keys-and-repos.sh
+cd ..
+
 sudo pacman -Syyu --noconfirm
 sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak i3-gaps i3blocks xcompmgr lxsession --noconfirm
+
+#Arcolinux derivation
+sudo pacman -S timeshift brave-bin pamac-all --noconfirm
+
 
 cd bspwm
 cd scripts
@@ -71,4 +81,4 @@ cp -r * ~/.config/sxhkd
 cd ..
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-yay -S --noconfirm timeshift brave-bin pamac-all nerd-fonts-mononoki
+yay -S --noconfirm nerd-fonts-mononoki
