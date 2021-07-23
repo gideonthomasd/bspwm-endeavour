@@ -33,6 +33,14 @@ chmod +x dwmcpu
 chmod +x dwmmail
 cd ..
 
+cd i3
+cp -r * ~/.config/i3
+cd ..
+
+cd i3blocks
+cp -r * ~/.config/i3blocks
+cd ..
+
 
 cd polybar
 cp -r * ~/.config/polybar
