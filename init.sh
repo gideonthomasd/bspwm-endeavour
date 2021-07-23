@@ -21,6 +21,10 @@ chmod +x *.sh
 cd ..
 cd ..
 
+mkdir -p ~/.config/i3
+mkdir -p ~/.config/i3blocks
+mkdir -p ~/.config/termite
+
 cd i3
 chmod +x testwallpaper
 cd ..
