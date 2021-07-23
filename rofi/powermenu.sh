@@ -29,8 +29,7 @@ then
     /home/$USER/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
 elif [ "$selected_option" == "$logout" ]
 then
-    pkill bspwm
-    pkill i3
+   arcolinux-logout
 elif [ "$selected_option" == "$shutdown" ]
 then
     systemctl poweroff
