@@ -9,7 +9,7 @@ sudo usr/share/arcolinux-spices/scripts/get-the-keys-and-repos.sh
 cd ..
 
 sudo pacman -Syyu --noconfirm
-sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak i3-gaps i3blocks xcompmgr lxsession --noconfirm
+sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak urxvt i3-gaps i3blocks xcompmgr lxsession --noconfirm
 
 #Arcolinux derivation
 sudo pacman -S timeshift brave-bin pamac-all arcolinux-logout-git --noconfirm
