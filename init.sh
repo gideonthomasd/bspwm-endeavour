@@ -120,6 +120,7 @@ cd ..
 
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
 
+cp bashrc ~/.bashrc
 cp Xresources ~/.Xresources
 
 cd ~/dwm-flexipatch
