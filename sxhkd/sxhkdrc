@@ -28,7 +28,7 @@ super + shift + d
 super + shift + e
      ~/.config/rofi/powermenu.sh
 super + x
-	~/.config/rofi/powermenu.sh
+	arcolinux-logout
 
 # make sxhkd reload its configuration files:
 super + Escape
