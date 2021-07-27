@@ -1,0 +1,39 @@
+#!/bin/bash
+
+MEMUSED=$(free -h | awk '(NR==2) {print $3}')
+MEMTOT=$(free -h | awk '(NR==2) {print $2}')
+
+#username="p"
+#password="r0e"
+#icon2="  "
+
+#icon3=" "
+
+##echo $MEMUSED"/"$MEMTOT
+
+oldtime=$(cat /home/phil/.config/arco-slstatus/time)
+current=$(date +%s)
+
+passed=$[ current-oldtime ]
+icon="  "
+if [ $passed -gt 300 ]
+then
+weathernow=$(curl wttr.in/Caerphilly?format="%l+%C+%f" 2>/dev/null | cut -d' ' -f2-)
+#mailcount=$(curl -u $username:$password  --silent "https://mail.google.com/mail/feed/atom" | grep -oPm1 "(?<=<fullcount>)[^<]+")
+#actualupdates=$(checkupdates | wc -l)
+
+date +%s > /home/phil/.config/arco-slstatus/time
+
+#echo $mailcount > /home/phil/slstatus/mail
+echo $weathernow > /home/phil/.config/arco-slstatus/weather
+#echo $actualupdates > /home/phil/slstatus/updates
+else
+weathernow=$(cat /home/phil/.config/arco-slstatus/weather)
+#mailcount=$(cat /home/phil/slstatus/mail)
+#actualupdates=$(cat /home/phil/slstatus/updates)
+fi
+
+echo "[Ram: "$MEMUSED"/"$MEMTOT"] ["$weathernow"]"
+
+
+
