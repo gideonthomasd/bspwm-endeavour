@@ -120,6 +120,7 @@ cd ..
 
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
 cd ~/dwm-flexipatch
+tar -xzvf patch.tar.gz
 sudo make clean install
 cd ~/.config/arco-slstatus
 sudo make clean install
