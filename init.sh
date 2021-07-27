@@ -36,6 +36,11 @@ mkdir -p ~/.config/i3blocks
 mkdir -p ~/.config/termite
 mkdir -p ~/.config/rofi
 
+mkdir -p ~/dwm-flexipatch
+mkdir -p ~/.config/arco-slstatus
+mkdir -p ~/.local/share/dwm
+sudo mkdir -p /usr/share/xsessions
+
 cd i3
 chmod +x testwallpaper
 cd ..
@@ -84,6 +89,25 @@ cd ..
 cd sxhkd
 cp -r * ~/.config/sxhkd
 cd ..
+
+cd dwm-flexipatch
+cp -r * ~/dwm-flexipatch
+cd ..
+
+cd conf
+cd arco-slstatus
+cp -r * ~/.config/arco-slstatus
+cd ..
+cd ..
+
+cd local
+cd share
+cp -r * ~/.local/share/dwm
+cd ..
+cd ..
+
+sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
+
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 yay -S --noconfirm nerd-fonts-mononoki
