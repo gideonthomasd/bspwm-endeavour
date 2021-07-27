@@ -119,6 +119,9 @@ cd ..
 cd ..
 
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
+
+cp Xresources ~/.Xresources
+
 cd ~/dwm-flexipatch
 tar -xzvf patch.tar.gz
 sudo make clean install
