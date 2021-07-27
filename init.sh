@@ -31,6 +31,18 @@ chmod +x *.sh
 cd ..
 cd ..
 
+cd local
+cd share
+chmod +x *.sh
+cd ..
+cd ..
+
+cd conf
+cd arco-slstatus
+chmod +x ram
+cd ..
+cd ..
+
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/i3blocks
 mkdir -p ~/.config/termite
@@ -107,6 +119,10 @@ cd ..
 cd ..
 
 sudo cp dwm.desktop /usr/share/xsessions/dwm.desktop
+cd ~/dwm-flexipatch
+sudo make clean install
+cd ~/.config/arco-slstatus
+sudo make clean install
 
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
