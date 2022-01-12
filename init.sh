@@ -10,7 +10,7 @@ cd ..
 
 sudo pacman -Syyu --noconfirm
 sudo pacman -S jgmenu youtube-dl pcmanfm lxtask vlc linux-lts linux-lts-headers geany flatpak rxvt-unicode i3-gaps i3blocks xcompmgr lxsession --noconfirm
-sudo pacman -R i3lock 
+sudo pacman -R i3lock --noconfirm
 #Arcolinux derivation
 sudo pacman -S timeshift brave-bin pamac-all arcolinux-logout-git --noconfirm
 
